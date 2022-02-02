@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.data_box{
+    width: 700px;
+    height: 520px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right:1px solid #000 ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+.data_box > .line{
+    position: absolute;
+    left: -35px;
+    width: 30px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+    color: #ccc;
+    cursor: default;
+    user-select: none;
+}
+.data_box > .line::before{
+    content: '';
+    width: 700px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    right: -705px;
+}
+.data_box > .data_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    z-index: 1000;
+}
+.data_box > .data_list > .data_A{
+    width: 50px;
+    height: 400px;
+    background: linear-gradient(to bottom,#EEBD89,#D13ABD);
+    border-radius:  50px 50px 0 0 ;
+    transition: all .5s;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.data_box > .data_list > .data_A:hover{
+    box-shadow: 0 0 20px #df79a4;
+    opacity: 1;
+}
+.data_box > .data_list > .data_B{
+    width: 50px;
+    height: 200px;
+    background: linear-gradient(to bottom,#EEBD89,#D13ABD);
+    border-radius:  50px 50px 0 0 ;
+    transition: all .5s;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.data_box > .data_list > .data_B:hover{
+    box-shadow: 0 0 20px #df79a4;
+    opacity: 1;
+}
+.data_box > .data_list > .data_C{
+    width: 50px;
+    height: 250px;
+    background: linear-gradient(to bottom,#EEBD89,#D13ABD);
+    border-radius:  50px 50px 0 0 ;
+    transition: all .5s;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.data_box > .data_list > .data_C:hover{
+    box-shadow: 0 0 20px #df79a4;
+    opacity: 1;
+}
+.data_box > .data_list > .data_D{
+    width: 50px;
+    height: 100px;
+    background: linear-gradient(to bottom,#EEBD89,#D13ABD);
+    border-radius:  50px 50px 0 0 ;
+    transition: all .5s;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.data_box > .data_list > .data_D:hover{
+    box-shadow: 0 0 20px #df79a4;
+    opacity: 1;
+}
+.data_box > .avgshow{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    background: rgba(0, 255, 179, 0.3);
+    z-index: 1001;
+    transition: all .5s;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px  rgba(0, 255, 179, 0.3);
+    cursor: pointer;
+}
+.data_editor{
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+.data_editor > input{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.data_editor > button{
+    width: 55px;
+    height: 55px;
+}
+.show_control{
+    width: 80px;
+    height: 300px;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.show_control > div{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all .5s ;
+}
