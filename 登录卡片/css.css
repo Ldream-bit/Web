@@ -1,0 +1,145 @@
+/* 清除默认边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 登录卡片主体 */
+.box{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #A9BCD0;
+    box-shadow: 
+    0 0 20px rgba(0, 0, 0, 0.6),
+    0 0 10px rgba(0, 0, 0, 0.6) inset;
+    border-radius: 20px;
+    overflow: hidden;
+}
+/* 背景 */
+.box > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+/* 登录 */
+.box > .login{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50% 20px 20px 50%;
+    background: transparent;
+    box-shadow: 
+    5px 0 10px rgba(0, 0, 0, 0.3) inset;
+    backdrop-filter: blur(50px);
+    transition: all .3s;
+}
+.box > .login > div{
+    margin-top: 50px;
+}
+.box > .login > div:first-child{
+    margin-top: 100px;
+}
+.box > .login > div > input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-size: 16px;
+    transition: all .3s;
+    color: white;
+}
+.box > .login > div > input:focus{
+    border-bottom: 2px white solid;
+    width: 300px;
+}
+.box > .login > div > button{
+    width: 100px ;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+/* 注册 */
+.box > .register{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: -400px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50% 20px 20px 50%;
+    background: transparent;
+    box-shadow: 
+    5px 0 10px rgba(0, 0, 0, 0.3) inset;
+    backdrop-filter: blur(50px);
+    transition: all .3s;
+}
+.box > .register > div{
+    margin-top: 50px;
+}
+.box > .register > div:first-child{
+    margin-top: 100px;
+}
+.box > .register > div > input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-size: 16px;
+    transition: all .3s;
+    color: white;
+}
+.box > .register > div > input:focus{
+    border-bottom: 2px white solid;
+    width: 300px;
+}
+.box > .register > div > button{
+    width: 100px ;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+}
+/* 侧边栏 */
+.box > .line{
+    width: 50px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    border-right:2px solid white ;
+    backdrop-filter: blur(50px);
+}
+.box > .line > div{
+    font-size: 15px;
+    width: 50px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+.box > .line > div:first-child{
+    text-shadow: 0 0 10px white;
+    color: white;
+}
