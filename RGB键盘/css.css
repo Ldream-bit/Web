@@ -1,0 +1,132 @@
+/* 清空默认边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 背景颜色 */
+body{
+    background: #c1c1c1;
+}
+
+/* 键盘底板 */
+.box{
+    width: 1000px;
+    height: 350px;
+    border-radius: 15px;
+    background: #000000b3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: -20px 20px 40px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    color: white;
+    text-shadow: 0 0 10px white;
+    transition: all .5s;
+}
+
+/* 键盘按键 */
+.box > div{
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.box > .ESC{
+    margin-right: 52.5px;
+}
+.box > .Pause{
+    margin-right: 0px;
+}
+.box > .F1{
+    margin-left: 8px;
+}
+.box > .F4{
+    margin-right: 25px;
+}
+.box > .F8{
+    margin-right: 25px;
+}
+.box > .F12{
+    margin-right: 30px;
+}
+.box > .\<——{
+    width: 90px;
+    margin-right: 30px;
+}
+.box > .\\\|{
+    width: 70px;
+    margin-right: 30px;
+}
+.box > .CapsLock{
+    width: 90px;
+}
+.box > .Enter{
+    width: 105px;
+    margin-right: 160px;
+}
+.box > .LShift{
+    width: 125px;
+}
+.box > .RShift{
+    width: 125px;
+    margin-right: 85px;
+}
+.box > .↑{
+    margin-right: 15px;
+}
+.box > .Space{
+    width: 420px;
+}
+.box > .RCtrl{
+    margin-right: 30px;
+}
+
+/* RGB灯光效果 */
+.RGB{
+    width: 1000px;
+    height: 100px;
+    margin: 200px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.RGB > div{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: all .3s;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.RGB > div:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+.RGB > .red{
+    background: red;
+    box-shadow: 0 0 20px red;
+}
+.RGB > .green{
+    background: green;
+    box-shadow: 0 0 20px green;
+}
+.RGB > .white{
+    background: white;
+    box-shadow: 0 0 20px white;
+}
+.RGB > .deeppink{
+    background: deeppink;
+    box-shadow: 0 0 20px deeppink;
+}
+.RGB > .yellow{
+    background: yellow;
+    box-shadow: 0 0 20px yellow;
+}
