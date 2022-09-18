@@ -1,0 +1,64 @@
+/* 清空默认样式 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 背景颜色 */
+body{
+    background: #50514F;
+}
+/* 轮播图主体 */
+.box{
+    width: 980px;
+    height: 540px;
+    margin: 100px auto;
+    background: gray;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.box > .main{
+    width: 4900px;
+    height: 540px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    transition: all .5s;
+}
+.box > .main > img{
+    width: 980px;
+    height: 540px;
+}
+.box > .btns{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 上一张和下一张 */
+.box > .btns > div{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 900;
+    transition: all .3s;
+}
+.box > .btns > div:hover{
+    text-shadow: 0 0 10px white;
+    color: white;
+}
+.box > .btns > div:nth-of-type(1){
+    float: left;
+}        
+.box > .btns > div:nth-of-type(2){
+    float: right;
+}        
